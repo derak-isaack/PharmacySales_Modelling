@@ -36,9 +36,12 @@ This [python-file](helpers.py) defines a class using the traditional `python OOP
 
 The `Sreamlit app` can be found [here](https://pharmacysalesmodelling-kwbzl75dznpruqejurdt9b.streamlit.app/) and here is a snippet of the `User Interface` for inputting sales data. 
 
-![Dimesnions-snippet](Dimensions.png)
+![Dimensions-snippet](Dimensions.png)
 ![Facts-snippet](Facts.png)
 
+`Future steps`: `OLTP` databases are not efficient for storing data in the long term and as such the need to do `database migration` is very imminent because `OLAP databases` offer a solution to perfrom more complex queries. 
+
+The main `database migration` tool to be considered in future is `Airbyte`. It supoorts `ETL transformation` too fromm database to database.  
 
 
 
