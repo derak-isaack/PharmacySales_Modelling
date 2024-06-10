@@ -22,9 +22,15 @@ The application also uses the `SQLite3 OLTP database` for data entry which  has 
 * Handles severall transaction requests simultaneously.
 * Offers atomicity. 
 
-### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Objectives</span></b> </div>
+### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Objectives & description</span></b> </div>
 
-1. Develop a data model that follows the `star-schema` approach having the `dimensions` and `facts` table. 
+Develop a data model that follows the `star-schema` approach having the `dimensions` and `facts` table. The `table-models` can be found [here](pharmacy_sales_tracker.sql) which typically uses the `sql` approach. 
 
-The simple `ERD-diagram` can be found ![here](ERD_diagram.png)
+Defining the tables in a separate file offers more control to the application. It also provides easy debugging for the application. 
+
+`ERD-diagram` ![ERD](ERD_diagram.png)
+
+This [python-file](helpers.py) defines a class using the traditional `python OOP` approach which offers more customization and flavour to the main `streamlit application`.It also allows form sharing from the `doctor table`, `Employee table` and `Drug items` tables which are the `dimension tables` which very vital in providing more context to the `Facts table`. 
+
+
 
