@@ -34,7 +34,7 @@ This [python-file](helpers.py) defines a class using the traditional `python OOP
 
 ### <div style="padding: 20px;color:white;margin:10;font-size:90%;text-align:left;display:fill;border-radius:10px;overflow:hidden;background-image: url(https://w0.peakpx.com/wallpaper/957/661/HD-wallpaper-white-marble-white-stone-texture-marble-stone-background-white-stone.jpg)"><b><span style='color:black'> Conclusion & Future steps</span></b> </div>
 
-The `Sreamlit app` can be found [here](https://pharmacysalesmodelling-kwbzl75dznpruqejurdt9b.streamlit.app/) and here is a snippet of the `User Interface` for inputting sales data. 
+The `Sreamlit app` can be found [https://pharmacysalesmodelling-kwbzl75dznpruqejurdt9b.streamlit.app/](https://pharmacysalesmodelling-kwbzl75dznpruqejurdt9b.streamlit.app/) and here is a snippet of the `User Interface` for inputting sales data. 
 
 ![Dimensions-snippet](Dimensions.png)
 ![Facts-snippet](Facts.png)
