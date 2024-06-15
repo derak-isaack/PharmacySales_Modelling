@@ -11,7 +11,7 @@ conn = db.connect()
 def get_employee_names():
     conn = db.connect()
     cursor = conn.cursor()
-    cursor.execute("SELECT name FROM Employees")
+    cursor.execute("SELECT id FROM Employees")
     names = [row[0] for row in cursor.fetchall()]
     conn.close()
     return names
@@ -19,7 +19,7 @@ def get_employee_names():
 def get_drug_names():
     conn = db.connect()
     cursor = conn.cursor()
-    cursor.execute("SELECT name FROM Drugs_items")
+    cursor.execute("SELECT id FROM Drugs_items")
     names = [row[0] for row in cursor.fetchall()]
     conn.close()
     return names
@@ -27,7 +27,7 @@ def get_drug_names():
 def get_doctor_names():
     conn = db.connect()
     cursor = conn.cursor()
-    cursor.execute("SELECT name FROM Doctors_table")
+    cursor.execute("SELECT id FROM Doctors_table")
     names = [row[0] for row in cursor.fetchall()]
     conn.close()
     return names   
@@ -39,9 +39,9 @@ def main():
 
     with st.form(key='sales_form'):
     # Sales details
-        employee_name = st.selectbox("Select Employee", get_employee_names()) 
-        drug_name = st.selectbox("Select Drug", get_drug_names())  
-        doctor_name = st.selectbox("Select Doctor", get_doctor_names())  
+        emp_id = st.selectbox("Select Employee", get_employee_names()) 
+        drug_id = st.selectbox("Select Drug", get_drug_names())  
+        doc_id = st.selectbox("Select Doctor", get_doctor_names())  
         quantity_sold = st.number_input("Quantity Sold")
         date_sold = st.date_input("Date of Sale")
         pharmacy_name = st.text_input("Pharmacy Name")
@@ -52,7 +52,7 @@ def main():
         conn = db.connect()
         cursor = conn.cursor()
         sql = "INSERT INTO Sales (emp_id, drug_id, doc_id, pharmacy_name, pharmacy_region, quantity_sold, date_sold) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        data = (employee_name, drug_name, doctor_name, pharmacy_name, pharmacy_region, quantity_sold, date_sold)
+        data = (int(emp_id), int(drug_id), int(doc_id), pharmacy_name, pharmacy_region, quantity_sold, date_sold)
         cursor.execute(sql, data)
         conn.commit()
         conn.close()
