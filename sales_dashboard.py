@@ -2,13 +2,14 @@ import sqlite3
 import streamlit as st
 from database2 import Database 
 from helpers import App
+import mysql.connector
 
-db = Database()
+db = Database(db_user='root', db_password='@admin#2024*10', db_host='localhost', db_name='pharmaflow')
 db.initialize_database()  
 conn = db.connect()
 
 def get_employee_names():
-    conn = sqlite3.connect('database.db')
+    conn = db.connect()
     cursor = conn.cursor()
     cursor.execute("SELECT name FROM Employees")
     names = [row[0] for row in cursor.fetchall()]
@@ -16,7 +17,7 @@ def get_employee_names():
     return names
 
 def get_drug_names():
-    conn = sqlite3.connect('database.db')
+    conn = db.connect()
     cursor = conn.cursor()
     cursor.execute("SELECT name FROM Drugs_items")
     names = [row[0] for row in cursor.fetchall()]
@@ -24,7 +25,7 @@ def get_drug_names():
     return names
 
 def get_doctor_names():
-    conn = sqlite3.connect('database.db')
+    conn = db.connect()
     cursor = conn.cursor()
     cursor.execute("SELECT name FROM Doctors_table")
     names = [row[0] for row in cursor.fetchall()]
@@ -48,9 +49,9 @@ def main():
         submit_button = st.form_submit_button(label='Submit Sale')
 
     if submit_button:
-        conn = sqlite3.connect('database.db')
+        conn = db.connect()
         cursor = conn.cursor()
-        sql = "INSERT INTO Sales (emp_id, drug_id, doc_id, pharmacy_name, pharmacy_region, quantity_sold, date_sold) VALUES (?, ?, ?, ?, ?, ?, ?)"
+        sql = "INSERT INTO Sales (emp_id, drug_id, doc_id, pharmacy_name, pharmacy_region, quantity_sold, date_sold) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         data = (employee_name, drug_name, doctor_name, pharmacy_name, pharmacy_region, quantity_sold, date_sold)
         cursor.execute(sql, data)
         conn.commit()
