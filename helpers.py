@@ -4,7 +4,7 @@ from database2 import Database
 
 class App:
     def __init__(self):
-        self.db = Database()
+        self.db = Database(db_host='localhost', db_user='root', db_password='@admin#2024*10', db_name='pharmaflow')
         self.db.initialize_database()  
         # self.conn = self.db.connect()
         self.title = "Form to input Data"
@@ -18,7 +18,7 @@ class App:
             email = st.text_input("Email")
             submit_button = st.form_submit_button("Submit")
         if submit_button:
-            sql = "INSERT INTO Employees (name, salary, phone_number, email) VALUES (?, ?, ?, ?) "
+            sql = "INSERT INTO Employees (name, salary, phone_number, email) VALUES (%s, %s, %s, %s) "
             data = (employee_name, salary, phone_number, email)
             self.db.execute(sql, data)
             st.success("Employee added successfully!")
@@ -33,7 +33,7 @@ class App:
             stock_remaining = st.number_input("Stock Remaining")
             submit_button = st.form_submit_button("Submit")
         if submit_button:
-            sql = "INSERT INTO Drugs_items (name, quantity_supplied, price, stock_remaining) VALUES (?, ?, ?, ?) "
+            sql = "INSERT INTO Drugs_items (name, quantity_supplied, price, stock_remaining) VALUES (%s, %s, %s, %s) "
             data = (drug_name, drug_quantity, drug_price, stock_remaining)
             self.db.execute(sql, data)
             st.success("Drug added successfully!")
@@ -49,7 +49,7 @@ class App:
             region = st.text_input("Region")
             submit_button = st.form_submit_button("Submit")
         if submit_button:
-            sql = "INSERT INTO Doctors_table (name, specialization, phone_number, email, region ) VALUES (?, ?, ?, ?, ?) "
+            sql = "INSERT INTO Doctors_table (name, specialization, phone_number, email, region ) VALUES (%s, %s, %s, %s, %s) "
             data = (doctor_name, doctor_speciality, phone_number, email, region)
             self.db.execute(sql, data)
             st.success("Doctor added successfully!")
