@@ -3,6 +3,7 @@ import streamlit as st
 from database2 import Database 
 from helpers import App
 import mysql.connector
+import socket
 
 db = Database(db_user='root', db_password='@admin#2024*10', db_host='localhost', db_name='pharmaflow')
 db.initialize_database()  
@@ -39,9 +40,9 @@ def main():
 
     with st.form(key='sales_form'):
     # Sales details
-        emp_id = st.selectbox("Select Employee", get_employee_names()) 
-        drug_id = st.selectbox("Select Drug", get_drug_names())  
-        doc_id = st.selectbox("Select Doctor", get_doctor_names())  
+        emp_id = st.selectbox("Select Employee ID", get_employee_names()) 
+        drug_id = st.selectbox("Select Drug ID", get_drug_names())  
+        doc_id = st.selectbox("Select Doctor ID", get_doctor_names())  
         quantity_sold = st.number_input("Quantity Sold")
         date_sold = st.date_input("Date of Sale")
         pharmacy_name = st.text_input("Pharmacy Name")
@@ -57,6 +58,12 @@ def main():
         conn.commit()
         conn.close()
         st.success('Sale data submitted successfully!')
+        
+        data_str = f"{emp_id},{drug_id},{doc_id},{pharmacy_name},{pharmacy_region},{quantity_sold},{date_sold}"
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.connect(('localhost', 8000))
+            sock.sendall(data_str.encode('utf-8'))
+        st.success('Data sent to the server successfully!')
 
 
 if __name__ == "__main__":
