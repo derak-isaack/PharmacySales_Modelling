@@ -19,8 +19,8 @@ spark = SparkSession.builder.appName("StreamlitStreaming").getOrCreate()
 #Define input sources
 lines = spark.readStream.format("socket").option("host", "localhost").option("port", 8000).load()
 
-#Define the data 
-data = lines.select(split(col("value"), ",").alias("values"))
+#Define the data and use the explode function to flatten it
+data = lines.select(explode(split(col("value"), ",").alias("values")))
 
 #Define columns
 sales_df = data.select(
