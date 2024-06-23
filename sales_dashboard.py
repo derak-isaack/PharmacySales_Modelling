@@ -4,6 +4,7 @@ from database2 import Database
 from helpers import App
 import mysql.connector
 import socket
+import json
 
 db = Database(db_user='root', db_password='@admin#2024*10', db_host='localhost', db_name='pharmaflow')
 db.initialize_database()  
@@ -33,6 +34,26 @@ def get_doctor_names():
     conn.close()
     return names   
 
+def send_data(data):
+    """Sends individual data points from `data` to ncat server.
+
+    Args:
+        data (str): The data string containing comma-separated values.
+    """
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect(("localhost", 8000))  
+
+        # Split data into individual values 
+        data_points = data.split(",")
+        for value in data_points:
+            s.sendall(f"{value}\n".encode('utf-8'))
+            
+        s.close()
+        
+    except ConnectionError as e:
+        st.error(f"Error sending data to ncat server: {e}")
+
 def main():
 
     st.set_page_config(page_title='Sales Dashboard', page_icon=':bar_chart:', layout='wide')
@@ -53,16 +74,23 @@ def main():
         conn = db.connect()
         cursor = conn.cursor()
         sql = "INSERT INTO Sales (emp_id, drug_id, doc_id, pharmacy_name, pharmacy_region, quantity_sold, date_sold) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        data = (int(emp_id), int(drug_id), int(doc_id), pharmacy_name, pharmacy_region, quantity_sold, date_sold)
+        data = (int(emp_id), int(drug_id), int(doc_id), pharmacy_name, pharmacy_region, float(quantity_sold), date_sold)
         cursor.execute(sql, data)
         conn.commit()
         conn.close()
         st.success('Sale data submitted successfully!')
         
-        data_str = f"{emp_id},{drug_id},{doc_id},{pharmacy_name},{pharmacy_region},{quantity_sold},{date_sold}"
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.connect(('localhost', 8000))
-            sock.sendall(data_str.encode('utf-8'))
+        data_dict = {
+            "emp_id": emp_id,
+            "drug_id": drug_id,
+            "doc_id": doc_id,
+            "pharmacy_name": pharmacy_name,
+            "pharmacy_region": pharmacy_region,
+            "quantity_sold": quantity_sold,
+            "date_sold": str(date_sold)
+        }
+        data_json = json.dumps(data_dict)
+        send_data(data_json)
         st.success('Data sent to the server successfully!')
 
 
