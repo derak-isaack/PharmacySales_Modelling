@@ -13,6 +13,7 @@ app = Application(
     loglevel= 'DEBUG'
 )
 
+
 db = Database(db_user='root', db_password='@admin#2024*10', db_host='localhost', db_name='pharmaflow')
 db.initialize_database()  
 conn = db.connect()
@@ -99,6 +100,7 @@ def main():
         conn.close()
         st.success('Sale data submitted successfully!')
         
+        #Transform data into json formart for easier data ingestion into kafka
         data_dict = {
             "emp_id": emp_id,
             "drug_id": drug_id,
@@ -109,9 +111,13 @@ def main():
             "date_sold": str(date_sold)
         }
         data_json = json.dumps(data_dict)
+        
+        # Define a topic with JSON serialization
+        topic = app.topic(name='streamlit-sales-tracker', value_serializer='json')
+        
         with app.get_producer() as producer:
             producer.produce(
-                topic="pharmacy-sales-stream",
+                topic=topic.name,
                 value=json.dumps(data_json)
             )
         # send_data_quixstreams(data_json)
