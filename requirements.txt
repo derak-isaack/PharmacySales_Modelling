@@ -3,3 +3,4 @@ watchdog==4.0.1
 SQLAlchemy==2.0.30
 pymysql==1.1.1
 mysql-connector-python==8.4.0
+quixstreams==2.6.0
