@@ -19,7 +19,7 @@ def main():
         
         while True:
             #Poll represents how many seconds the kafka should wait for the topics
-            msg = consumer.poll(1)  
+            msg = consumer.poll(10)  
             
             if msg is None:
                 print("waiting...")
