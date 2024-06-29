@@ -28,7 +28,8 @@ def main():
         new_total = current_total + float(d["quantity_sold"])
         state.set("quantity_total", new_total)
         d["total_quantity_sold"] = new_total
-        logging.debug ("Returning:", d)
+        logging.debug(f"Returning: {d}")
+        return d
 
     def groupby_store_and_item(message):
         if isinstance(message, str):
@@ -38,24 +39,25 @@ def main():
 
     
     sdf = app.dataframe(input_topic)
-    sdf = sdf.group_by(key=groupby_store_and_item, name="pharmacy_item")
-    sdf = sdf.apply(calculate_total_quantity, stateful=True)
+    sdf = sdf.group_by(key=groupby_store_and_item, name="pharmacy_item").apply(calculate_total_quantity, stateful=True)
     sdf = sdf.to_topic(output_topic)
-    sdf = sdf.t
-    
+    logging.debug("Starting...")
     app.run(sdf)
+    
+    
     
     with app.get_consumer() as consumer:
         consumer.subscribe(["streamlit-sales-tracker-output"])
         
         while True:
-            msg = consumer.poll(10)
+            msg = consumer.poll(1)
             if msg is None:
                 print("waiting...")
             elif msg.error() is not None:
                 print(f"Consumer error: {msg.error()}")
             else:
                 process_message(msg)
+                
                 
 
 if __name__ == "__main__":
