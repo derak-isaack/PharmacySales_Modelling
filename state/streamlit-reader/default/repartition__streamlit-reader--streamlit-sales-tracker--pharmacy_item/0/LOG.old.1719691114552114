@@ -1,0 +1,492 @@
+2024/06/29-22:55:54.373844 3d70 RocksDB version: 9.0.0
+2024/06/29-22:55:54.373905 3d70 Compile date 2024-03-11 11:26:24
+2024/06/29-22:55:54.373927 3d70 DB SUMMARY
+2024/06/29-22:55:54.373942 3d70 Host name (Env):  ISAACK
+2024/06/29-22:55:54.373951 3d70 DB Session ID:  D852MDGQIDVQSLJKOZKS
+2024/06/29-22:55:54.375425 3d70 CURRENT file:  CURRENT
+2024/06/29-22:55:54.375441 3d70 IDENTITY file:  IDENTITY
+2024/06/29-22:55:54.375510 3d70 MANIFEST file:  MANIFEST-000070 size: 1626 Bytes
+2024/06/29-22:55:54.375523 3d70 SST files in D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0 dir, Total Num: 8, files: 000046.sst 000055.sst 000056.sst 000063.sst 000065.sst 000066.sst 000074.sst 000075.sst 
+2024/06/29-22:55:54.381196 3d70 Write Ahead Log file in D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0: 000073.log size: 0 ; 
+2024/06/29-22:55:54.381408 3d70                         Options.error_if_exists: 0
+2024/06/29-22:55:54.381514 3d70                       Options.create_if_missing: 1
+2024/06/29-22:55:54.381523 3d70                         Options.paranoid_checks: 1
+2024/06/29-22:55:54.381532 3d70             Options.flush_verify_memtable_count: 1
+2024/06/29-22:55:54.381539 3d70          Options.compaction_verify_record_count: 1
+2024/06/29-22:55:54.381547 3d70                               Options.track_and_verify_wals_in_manifest: 0
+2024/06/29-22:55:54.381555 3d70        Options.verify_sst_unique_id_in_manifest: 1
+2024/06/29-22:55:54.381562 3d70                                     Options.env: 0000020A1561A9F0
+2024/06/29-22:55:54.381571 3d70                                      Options.fs: WinFS
+2024/06/29-22:55:54.381579 3d70                                Options.info_log: 0000020A178523E0
+2024/06/29-22:55:54.381586 3d70                Options.max_file_opening_threads: 16
+2024/06/29-22:55:54.381593 3d70                              Options.statistics: 0000000000000000
+2024/06/29-22:55:54.381602 3d70                               Options.use_fsync: 0
+2024/06/29-22:55:54.381611 3d70                       Options.max_log_file_size: 0
+2024/06/29-22:55:54.381619 3d70                  Options.max_manifest_file_size: 1073741824
+2024/06/29-22:55:54.381627 3d70                   Options.log_file_time_to_roll: 0
+2024/06/29-22:55:54.381635 3d70                       Options.keep_log_file_num: 1000
+2024/06/29-22:55:54.381643 3d70                    Options.recycle_log_file_num: 0
+2024/06/29-22:55:54.381651 3d70                         Options.allow_fallocate: 1
+2024/06/29-22:55:54.381759 3d70                        Options.allow_mmap_reads: 0
+2024/06/29-22:55:54.381812 3d70                       Options.allow_mmap_writes: 0
+2024/06/29-22:55:54.381823 3d70                        Options.use_direct_reads: 0
+2024/06/29-22:55:54.381833 3d70                        Options.use_direct_io_for_flush_and_compaction: 0
+2024/06/29-22:55:54.381863 3d70          Options.create_missing_column_families: 1
+2024/06/29-22:55:54.381899 3d70                              Options.db_log_dir: 
+2024/06/29-22:55:54.381909 3d70                                 Options.wal_dir: 
+2024/06/29-22:55:54.381918 3d70                Options.table_cache_numshardbits: 6
+2024/06/29-22:55:54.381927 3d70                         Options.WAL_ttl_seconds: 0
+2024/06/29-22:55:54.381936 3d70                       Options.WAL_size_limit_MB: 0
+2024/06/29-22:55:54.381944 3d70                        Options.max_write_batch_group_size_bytes: 1048576
+2024/06/29-22:55:54.381954 3d70             Options.manifest_preallocation_size: 4194304
+2024/06/29-22:55:54.381961 3d70                     Options.is_fd_close_on_exec: 1
+2024/06/29-22:55:54.381968 3d70                   Options.advise_random_on_open: 1
+2024/06/29-22:55:54.381977 3d70                    Options.db_write_buffer_size: 0
+2024/06/29-22:55:54.381993 3d70                    Options.write_buffer_manager: 0000020A17867A90
+2024/06/29-22:55:54.382053 3d70           Options.random_access_max_buffer_size: 1048576
+2024/06/29-22:55:54.382444 3d70                      Options.use_adaptive_mutex: 0
+2024/06/29-22:55:54.382524 3d70                            Options.rate_limiter: 0000000000000000
+2024/06/29-22:55:54.382671 3d70     Options.sst_file_manager.rate_bytes_per_sec: 0
+2024/06/29-22:55:54.382716 3d70                       Options.wal_recovery_mode: 2
+2024/06/29-22:55:54.382744 3d70                  Options.enable_thread_tracking: 0
+2024/06/29-22:55:54.382770 3d70                  Options.enable_pipelined_write: 0
+2024/06/29-22:55:54.382801 3d70                  Options.unordered_write: 0
+2024/06/29-22:55:54.382825 3d70         Options.allow_concurrent_memtable_write: 1
+2024/06/29-22:55:54.382851 3d70      Options.enable_write_thread_adaptive_yield: 1
+2024/06/29-22:55:54.382876 3d70             Options.write_thread_max_yield_usec: 100
+2024/06/29-22:55:54.382902 3d70            Options.write_thread_slow_yield_usec: 3
+2024/06/29-22:55:54.382931 3d70                               Options.row_cache: None
+2024/06/29-22:55:54.382953 3d70                              Options.wal_filter: None
+2024/06/29-22:55:54.382977 3d70             Options.avoid_flush_during_recovery: 0
+2024/06/29-22:55:54.383006 3d70             Options.allow_ingest_behind: 0
+2024/06/29-22:55:54.383014 3d70             Options.two_write_queues: 0
+2024/06/29-22:55:54.383024 3d70             Options.manual_wal_flush: 0
+2024/06/29-22:55:54.383034 3d70             Options.wal_compression: 0
+2024/06/29-22:55:54.383043 3d70             Options.atomic_flush: 0
+2024/06/29-22:55:54.383051 3d70             Options.avoid_unnecessary_blocking_io: 0
+2024/06/29-22:55:54.383060 3d70                 Options.persist_stats_to_disk: 0
+2024/06/29-22:55:54.383069 3d70                 Options.write_dbid_to_manifest: 0
+2024/06/29-22:55:54.383078 3d70                 Options.log_readahead_size: 0
+2024/06/29-22:55:54.383087 3d70                 Options.file_checksum_gen_factory: Unknown
+2024/06/29-22:55:54.383097 3d70                 Options.best_efforts_recovery: 0
+2024/06/29-22:55:54.383106 3d70                Options.max_bgerror_resume_count: 2147483647
+2024/06/29-22:55:54.383116 3d70            Options.bgerror_resume_retry_interval: 1000000
+2024/06/29-22:55:54.383125 3d70             Options.allow_data_in_errors: 0
+2024/06/29-22:55:54.383134 3d70             Options.db_host_id: __hostname__
+2024/06/29-22:55:54.383143 3d70             Options.enforce_single_del_contracts: true
+2024/06/29-22:55:54.383152 3d70             Options.max_background_jobs: 2
+2024/06/29-22:55:54.383161 3d70             Options.max_background_compactions: -1
+2024/06/29-22:55:54.383169 3d70             Options.max_subcompactions: 1
+2024/06/29-22:55:54.383175 3d70             Options.avoid_flush_during_shutdown: 0
+2024/06/29-22:55:54.383187 3d70           Options.writable_file_max_buffer_size: 1048576
+2024/06/29-22:55:54.383195 3d70             Options.delayed_write_rate : 16777216
+2024/06/29-22:55:54.383202 3d70             Options.max_total_wal_size: 134217728
+2024/06/29-22:55:54.383210 3d70             Options.delete_obsolete_files_period_micros: 21600000000
+2024/06/29-22:55:54.383217 3d70                   Options.stats_dump_period_sec: 600
+2024/06/29-22:55:54.383236 3d70                 Options.stats_persist_period_sec: 600
+2024/06/29-22:55:54.383242 3d70                 Options.stats_history_buffer_size: 1048576
+2024/06/29-22:55:54.383248 3d70                          Options.max_open_files: -1
+2024/06/29-22:55:54.383254 3d70                          Options.bytes_per_sync: 0
+2024/06/29-22:55:54.383261 3d70                      Options.wal_bytes_per_sync: 0
+2024/06/29-22:55:54.383267 3d70                   Options.strict_bytes_per_sync: 0
+2024/06/29-22:55:54.383273 3d70       Options.compaction_readahead_size: 2097152
+2024/06/29-22:55:54.383280 3d70                  Options.max_background_flushes: -1
+2024/06/29-22:55:54.383286 3d70 Options.daily_offpeak_time_utc: 
+2024/06/29-22:55:54.383292 3d70 Compression algorithms supported:
+2024/06/29-22:55:54.383304 3d70 	kZSTD supported: 1
+2024/06/29-22:55:54.383357 3d70 	kSnappyCompression supported: 1
+2024/06/29-22:55:54.383371 3d70 	kBZip2Compression supported: 1
+2024/06/29-22:55:54.383377 3d70 	kZlibCompression supported: 1
+2024/06/29-22:55:54.383383 3d70 	kLZ4Compression supported: 1
+2024/06/29-22:55:54.383389 3d70 	kXpressCompression supported: 0
+2024/06/29-22:55:54.383394 3d70 	kLZ4HCCompression supported: 1
+2024/06/29-22:55:54.383401 3d70 	kZSTDNotFinalCompression supported: 1
+2024/06/29-22:55:54.383410 3d70 Fast CRC32 supported: Not supported on x86
+2024/06/29-22:55:54.383417 3d70 DMutex implementation: std::mutex
+2024/06/29-22:55:54.391083 3d70 [db/version_set.cc:6028] Recovering from manifest file: D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0/MANIFEST-000070
+2024/06/29-22:55:54.398190 3d70 [db/column_family.cc:618] --------------- Options for column family [default]:
+2024/06/29-22:55:54.398206 3d70               Options.comparator: leveldb.BytewiseComparator
+2024/06/29-22:55:54.398211 3d70           Options.merge_operator: None
+2024/06/29-22:55:54.398215 3d70        Options.compaction_filter: None
+2024/06/29-22:55:54.398218 3d70        Options.compaction_filter_factory: None
+2024/06/29-22:55:54.398222 3d70  Options.sst_partitioner_factory: None
+2024/06/29-22:55:54.398226 3d70         Options.memtable_factory: SkipListFactory
+2024/06/29-22:55:54.398229 3d70            Options.table_factory: BlockBasedTable
+2024/06/29-22:55:54.398269 3d70            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000020A1783E380)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 0000020A178669C0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2024/06/29-22:55:54.398274 3d70        Options.write_buffer_size: 67108864
+2024/06/29-22:55:54.398278 3d70  Options.max_write_buffer_number: 3
+2024/06/29-22:55:54.398284 3d70          Options.compression: LZ4
+2024/06/29-22:55:54.398288 3d70                  Options.bottommost_compression: Disabled
+2024/06/29-22:55:54.398292 3d70       Options.prefix_extractor: nullptr
+2024/06/29-22:55:54.398296 3d70   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/06/29-22:55:54.398299 3d70             Options.num_levels: 7
+2024/06/29-22:55:54.398303 3d70        Options.min_write_buffer_number_to_merge: 1
+2024/06/29-22:55:54.398307 3d70     Options.max_write_buffer_number_to_maintain: 0
+2024/06/29-22:55:54.398310 3d70     Options.max_write_buffer_size_to_maintain: 0
+2024/06/29-22:55:54.398314 3d70            Options.bottommost_compression_opts.window_bits: -14
+2024/06/29-22:55:54.398318 3d70                  Options.bottommost_compression_opts.level: 32767
+2024/06/29-22:55:54.398322 3d70               Options.bottommost_compression_opts.strategy: 0
+2024/06/29-22:55:54.398326 3d70         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/06/29-22:55:54.398329 3d70         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/06/29-22:55:54.398333 3d70         Options.bottommost_compression_opts.parallel_threads: 1
+2024/06/29-22:55:54.398340 3d70                  Options.bottommost_compression_opts.enabled: false
+2024/06/29-22:55:54.398345 3d70         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/06/29-22:55:54.398349 3d70         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2024/06/29-22:55:54.398353 3d70            Options.compression_opts.window_bits: -14
+2024/06/29-22:55:54.398357 3d70                  Options.compression_opts.level: 32767
+2024/06/29-22:55:54.398360 3d70               Options.compression_opts.strategy: 0
+2024/06/29-22:55:54.398364 3d70         Options.compression_opts.max_dict_bytes: 0
+2024/06/29-22:55:54.398368 3d70         Options.compression_opts.zstd_max_train_bytes: 0
+2024/06/29-22:55:54.398371 3d70         Options.compression_opts.use_zstd_dict_trainer: true
+2024/06/29-22:55:54.398375 3d70         Options.compression_opts.parallel_threads: 1
+2024/06/29-22:55:54.398379 3d70                  Options.compression_opts.enabled: false
+2024/06/29-22:55:54.398382 3d70         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/06/29-22:55:54.398388 3d70      Options.level0_file_num_compaction_trigger: 4
+2024/06/29-22:55:54.398391 3d70          Options.level0_slowdown_writes_trigger: 20
+2024/06/29-22:55:54.398395 3d70              Options.level0_stop_writes_trigger: 36
+2024/06/29-22:55:54.398399 3d70                   Options.target_file_size_base: 67108864
+2024/06/29-22:55:54.398403 3d70             Options.target_file_size_multiplier: 1
+2024/06/29-22:55:54.398406 3d70                Options.max_bytes_for_level_base: 268435456
+2024/06/29-22:55:54.398410 3d70 Options.level_compaction_dynamic_level_bytes: 1
+2024/06/29-22:55:54.398414 3d70          Options.max_bytes_for_level_multiplier: 10.000000
+2024/06/29-22:55:54.398418 3d70 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/06/29-22:55:54.398422 3d70 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/06/29-22:55:54.398426 3d70 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/06/29-22:55:54.398429 3d70 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/06/29-22:55:54.398433 3d70 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/06/29-22:55:54.398436 3d70 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/06/29-22:55:54.398440 3d70 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/06/29-22:55:54.398444 3d70       Options.max_sequential_skip_in_iterations: 8
+2024/06/29-22:55:54.398447 3d70                    Options.max_compaction_bytes: 1677721600
+2024/06/29-22:55:54.398451 3d70                        Options.arena_block_size: 1048576
+2024/06/29-22:55:54.398455 3d70   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/06/29-22:55:54.398459 3d70   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/06/29-22:55:54.398462 3d70                Options.disable_auto_compactions: 0
+2024/06/29-22:55:54.398467 3d70                        Options.compaction_style: kCompactionStyleLevel
+2024/06/29-22:55:54.398471 3d70                          Options.compaction_pri: kMinOverlappingRatio
+2024/06/29-22:55:54.398475 3d70 Options.compaction_options_universal.size_ratio: 1
+2024/06/29-22:55:54.398479 3d70 Options.compaction_options_universal.min_merge_width: 2
+2024/06/29-22:55:54.398482 3d70 Options.compaction_options_universal.max_merge_width: 4294967295
+2024/06/29-22:55:54.398486 3d70 Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/06/29-22:55:54.398490 3d70 Options.compaction_options_universal.compression_size_percent: -1
+2024/06/29-22:55:54.398495 3d70 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/06/29-22:55:54.398498 3d70 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/06/29-22:55:54.398502 3d70 Options.compaction_options_fifo.allow_compaction: 0
+2024/06/29-22:55:54.398513 3d70                   Options.table_properties_collectors: 
+2024/06/29-22:55:54.398517 3d70                   Options.inplace_update_support: 0
+2024/06/29-22:55:54.398521 3d70                 Options.inplace_update_num_locks: 10000
+2024/06/29-22:55:54.398570 3d70               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/06/29-22:55:54.398576 3d70               Options.memtable_whole_key_filtering: 0
+2024/06/29-22:55:54.398580 3d70   Options.memtable_huge_page_size: 0
+2024/06/29-22:55:54.398584 3d70                           Options.bloom_locality: 0
+2024/06/29-22:55:54.398588 3d70                    Options.max_successive_merges: 0
+2024/06/29-22:55:54.398591 3d70                Options.optimize_filters_for_hits: 0
+2024/06/29-22:55:54.398595 3d70                Options.paranoid_file_checks: 0
+2024/06/29-22:55:54.398598 3d70                Options.force_consistency_checks: 1
+2024/06/29-22:55:54.398602 3d70                Options.report_bg_io_stats: 0
+2024/06/29-22:55:54.398606 3d70                               Options.ttl: 2592000
+2024/06/29-22:55:54.398609 3d70          Options.periodic_compaction_seconds: 0
+2024/06/29-22:55:54.398613 3d70                        Options.default_temperature: kUnknown
+2024/06/29-22:55:54.398617 3d70  Options.preclude_last_level_data_seconds: 0
+2024/06/29-22:55:54.398621 3d70    Options.preserve_internal_time_seconds: 0
+2024/06/29-22:55:54.398624 3d70                       Options.enable_blob_files: false
+2024/06/29-22:55:54.398628 3d70                           Options.min_blob_size: 0
+2024/06/29-22:55:54.398632 3d70                          Options.blob_file_size: 268435456
+2024/06/29-22:55:54.398635 3d70                   Options.blob_compression_type: NoCompression
+2024/06/29-22:55:54.398639 3d70          Options.enable_blob_garbage_collection: false
+2024/06/29-22:55:54.398643 3d70      Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/06/29-22:55:54.398647 3d70 Options.blob_garbage_collection_force_threshold: 1.000000
+2024/06/29-22:55:54.398651 3d70          Options.blob_compaction_readahead_size: 0
+2024/06/29-22:55:54.398655 3d70                Options.blob_file_starting_level: 0
+2024/06/29-22:55:54.398658 3d70         Options.experimental_mempurge_threshold: 0.000000
+2024/06/29-22:55:54.398662 3d70            Options.memtable_max_range_deletions: 0
+2024/06/29-22:55:54.398853 3d70 [db/column_family.cc:618] --------------- Options for column family [__metadata__]:
+2024/06/29-22:55:54.398861 3d70               Options.comparator: leveldb.BytewiseComparator
+2024/06/29-22:55:54.398866 3d70           Options.merge_operator: None
+2024/06/29-22:55:54.398869 3d70        Options.compaction_filter: None
+2024/06/29-22:55:54.398873 3d70        Options.compaction_filter_factory: None
+2024/06/29-22:55:54.398876 3d70  Options.sst_partitioner_factory: None
+2024/06/29-22:55:54.398880 3d70         Options.memtable_factory: SkipListFactory
+2024/06/29-22:55:54.398884 3d70            Options.table_factory: BlockBasedTable
+2024/06/29-22:55:54.398918 3d70            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000020A1783CF60)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  checksum: 4
+  no_block_cache: 0
+  block_cache: 0000020A178669C0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.500
+    low_pri_pool_ratio: 0.000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 6
+  enable_index_compression: 1
+  block_align: 0
+  max_auto_readahead_size: 262144
+  prepopulate_block_cache: 0
+  initial_auto_readahead_size: 8192
+  num_file_reads_for_auto_readahead: 2
+2024/06/29-22:55:54.398929 3d70        Options.write_buffer_size: 67108864
+2024/06/29-22:55:54.398935 3d70  Options.max_write_buffer_number: 3
+2024/06/29-22:55:54.398940 3d70          Options.compression: LZ4
+2024/06/29-22:55:54.398943 3d70                  Options.bottommost_compression: Disabled
+2024/06/29-22:55:54.398947 3d70       Options.prefix_extractor: nullptr
+2024/06/29-22:55:54.398951 3d70   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2024/06/29-22:55:54.398954 3d70             Options.num_levels: 7
+2024/06/29-22:55:54.398958 3d70        Options.min_write_buffer_number_to_merge: 1
+2024/06/29-22:55:54.398961 3d70     Options.max_write_buffer_number_to_maintain: 0
+2024/06/29-22:55:54.398965 3d70     Options.max_write_buffer_size_to_maintain: 0
+2024/06/29-22:55:54.398968 3d70            Options.bottommost_compression_opts.window_bits: -14
+2024/06/29-22:55:54.398972 3d70                  Options.bottommost_compression_opts.level: 32767
+2024/06/29-22:55:54.398976 3d70               Options.bottommost_compression_opts.strategy: 0
+2024/06/29-22:55:54.398980 3d70         Options.bottommost_compression_opts.max_dict_bytes: 0
+2024/06/29-22:55:54.398983 3d70         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2024/06/29-22:55:54.398987 3d70         Options.bottommost_compression_opts.parallel_threads: 1
+2024/06/29-22:55:54.398991 3d70                  Options.bottommost_compression_opts.enabled: false
+2024/06/29-22:55:54.398994 3d70         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2024/06/29-22:55:54.398998 3d70         Options.bottommost_compression_opts.use_zstd_dict_trainer: true
+2024/06/29-22:55:54.399002 3d70            Options.compression_opts.window_bits: -14
+2024/06/29-22:55:54.399005 3d70                  Options.compression_opts.level: 32767
+2024/06/29-22:55:54.399009 3d70               Options.compression_opts.strategy: 0
+2024/06/29-22:55:54.399013 3d70         Options.compression_opts.max_dict_bytes: 0
+2024/06/29-22:55:54.399016 3d70         Options.compression_opts.zstd_max_train_bytes: 0
+2024/06/29-22:55:54.399020 3d70         Options.compression_opts.use_zstd_dict_trainer: true
+2024/06/29-22:55:54.399024 3d70         Options.compression_opts.parallel_threads: 1
+2024/06/29-22:55:54.399027 3d70                  Options.compression_opts.enabled: false
+2024/06/29-22:55:54.399031 3d70         Options.compression_opts.max_dict_buffer_bytes: 0
+2024/06/29-22:55:54.399034 3d70      Options.level0_file_num_compaction_trigger: 4
+2024/06/29-22:55:54.399038 3d70          Options.level0_slowdown_writes_trigger: 20
+2024/06/29-22:55:54.399042 3d70              Options.level0_stop_writes_trigger: 36
+2024/06/29-22:55:54.399045 3d70                   Options.target_file_size_base: 67108864
+2024/06/29-22:55:54.399049 3d70             Options.target_file_size_multiplier: 1
+2024/06/29-22:55:54.399053 3d70                Options.max_bytes_for_level_base: 268435456
+2024/06/29-22:55:54.399056 3d70 Options.level_compaction_dynamic_level_bytes: 1
+2024/06/29-22:55:54.399060 3d70          Options.max_bytes_for_level_multiplier: 10.000000
+2024/06/29-22:55:54.399064 3d70 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2024/06/29-22:55:54.399068 3d70 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2024/06/29-22:55:54.399072 3d70 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2024/06/29-22:55:54.399076 3d70 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2024/06/29-22:55:54.399079 3d70 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2024/06/29-22:55:54.399083 3d70 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2024/06/29-22:55:54.399086 3d70 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2024/06/29-22:55:54.399090 3d70       Options.max_sequential_skip_in_iterations: 8
+2024/06/29-22:55:54.399094 3d70                    Options.max_compaction_bytes: 1677721600
+2024/06/29-22:55:54.399097 3d70                        Options.arena_block_size: 1048576
+2024/06/29-22:55:54.399101 3d70   Options.soft_pending_compaction_bytes_limit: 68719476736
+2024/06/29-22:55:54.399105 3d70   Options.hard_pending_compaction_bytes_limit: 274877906944
+2024/06/29-22:55:54.399109 3d70                Options.disable_auto_compactions: 0
+2024/06/29-22:55:54.399114 3d70                        Options.compaction_style: kCompactionStyleLevel
+2024/06/29-22:55:54.399118 3d70                          Options.compaction_pri: kMinOverlappingRatio
+2024/06/29-22:55:54.399122 3d70 Options.compaction_options_universal.size_ratio: 1
+2024/06/29-22:55:54.399125 3d70 Options.compaction_options_universal.min_merge_width: 2
+2024/06/29-22:55:54.399129 3d70 Options.compaction_options_universal.max_merge_width: 4294967295
+2024/06/29-22:55:54.399133 3d70 Options.compaction_options_universal.max_size_amplification_percent: 200
+2024/06/29-22:55:54.399136 3d70 Options.compaction_options_universal.compression_size_percent: -1
+2024/06/29-22:55:54.399140 3d70 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2024/06/29-22:55:54.399144 3d70 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2024/06/29-22:55:54.399148 3d70 Options.compaction_options_fifo.allow_compaction: 0
+2024/06/29-22:55:54.399152 3d70                   Options.table_properties_collectors: 
+2024/06/29-22:55:54.399156 3d70                   Options.inplace_update_support: 0
+2024/06/29-22:55:54.399159 3d70                 Options.inplace_update_num_locks: 10000
+2024/06/29-22:55:54.399163 3d70               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2024/06/29-22:55:54.399167 3d70               Options.memtable_whole_key_filtering: 0
+2024/06/29-22:55:54.399171 3d70   Options.memtable_huge_page_size: 0
+2024/06/29-22:55:54.399174 3d70                           Options.bloom_locality: 0
+2024/06/29-22:55:54.399178 3d70                    Options.max_successive_merges: 0
+2024/06/29-22:55:54.399182 3d70                Options.optimize_filters_for_hits: 0
+2024/06/29-22:55:54.399185 3d70                Options.paranoid_file_checks: 0
+2024/06/29-22:55:54.399189 3d70                Options.force_consistency_checks: 1
+2024/06/29-22:55:54.399192 3d70                Options.report_bg_io_stats: 0
+2024/06/29-22:55:54.399196 3d70                               Options.ttl: 2592000
+2024/06/29-22:55:54.399200 3d70          Options.periodic_compaction_seconds: 0
+2024/06/29-22:55:54.399203 3d70                        Options.default_temperature: kUnknown
+2024/06/29-22:55:54.399207 3d70  Options.preclude_last_level_data_seconds: 0
+2024/06/29-22:55:54.399211 3d70    Options.preserve_internal_time_seconds: 0
+2024/06/29-22:55:54.399214 3d70                       Options.enable_blob_files: false
+2024/06/29-22:55:54.399218 3d70                           Options.min_blob_size: 0
+2024/06/29-22:55:54.399222 3d70                          Options.blob_file_size: 268435456
+2024/06/29-22:55:54.399225 3d70                   Options.blob_compression_type: NoCompression
+2024/06/29-22:55:54.399229 3d70          Options.enable_blob_garbage_collection: false
+2024/06/29-22:55:54.399233 3d70      Options.blob_garbage_collection_age_cutoff: 0.250000
+2024/06/29-22:55:54.399237 3d70 Options.blob_garbage_collection_force_threshold: 1.000000
+2024/06/29-22:55:54.399241 3d70          Options.blob_compaction_readahead_size: 0
+2024/06/29-22:55:54.399244 3d70                Options.blob_file_starting_level: 0
+2024/06/29-22:55:54.399248 3d70         Options.experimental_mempurge_threshold: 0.000000
+2024/06/29-22:55:54.399252 3d70            Options.memtable_max_range_deletions: 0
+2024/06/29-22:55:54.421711 3d70 [db/version_set.cc:6079] Recovered from manifest file:D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0/MANIFEST-000070 succeeded,manifest_file_number is 70, next_file_number is 77, last_sequence is 79, log_number is 73,prev_log_number is 0,max_column_family is 1,min_log_number_to_keep is 73
+2024/06/29-22:55:54.421730 3d70 [db/version_set.cc:6088] Column family [default] (ID 0), log number is 73
+2024/06/29-22:55:54.421735 3d70 [db/version_set.cc:6088] Column family [__metadata__] (ID 1), log number is 73
+2024/06/29-22:55:54.426878 3d70 [db/db_impl/db_impl_open.cc:652] DB ID: 212522b8-3641-11ef-a800-0c5415cb51f5
+2024/06/29-22:55:54.431526 3d70 EVENT_LOG_v1 {"time_micros": 1719690954431487, "job": 1, "event": "recovery_started", "wal_files": [73]}
+2024/06/29-22:55:54.431543 3d70 [db/db_impl/db_impl_open.cc:1158] Recovering log #73 mode 2
+2024/06/29-22:55:54.434330 3d70 EVENT_LOG_v1 {"time_micros": 1719690954434320, "job": 1, "event": "recovery_finished"}
+2024/06/29-22:55:54.434961 3d70 [db/version_set.cc:5521] Creating manifest 79
+2024/06/29-22:55:54.461199 3d70 [file/delete_scheduler.cc:77] Deleted file D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0/000073.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2024/06/29-22:55:54.461434 3d70 [db/db_impl/db_impl_open.cc:2181] SstFileManager instance 0000020A17DE3220
+2024/06/29-22:55:54.462963 3d70 DB pointer 0000020A178B5240
+2024/06/29-22:55:54.463119 3d70 [db/db_impl/db_impl_compaction_flush.cc:1977] [__metadata__] Manual flush start.
+2024/06/29-22:55:54.463148 3d70 [db/db_impl/db_impl_compaction_flush.cc:1988] [__metadata__] Manual flush finished, status: OK
+2024/06/29-22:55:54.464005 3aac [db/db_impl/db_impl.cc:1166] ------- DUMPING STATS -------
+2024/06/29-22:55:54.464027 3aac [db/db_impl/db_impl.cc:1167] 
+** DB Stats **
+Uptime(secs): 0.1 total, 0.1 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+Write Stall (count): write-buffer-manager-limit-stops: 0
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      2/0    2.20 KB   0.5      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+  L6      3/0    3.28 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      5/0    5.48 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Estimated pending compaction bytes: 0
+Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
+Block cache LRUCache@0000020A178669C0#8476 capacity: 8.00 MB seed: 1371472462 usage: 0.08 KB table_size: 256 occupancy: 1 collections: 1 last_copies: 1 last_secs: 2.7e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [__metadata__] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      2/0    2.14 KB   0.5      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+  L6      1/0    1.06 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Sum      3/0    3.20 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0       0.0       0.0
+
+** Compaction Stats [__metadata__] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blob file count: 0, total size: 0.0 GB, garbage size: 0.0 GB, space amp: 0.0
+
+Uptime(secs): 0.1 total, 0.1 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Estimated pending compaction bytes: 0
+Write Stall (count): cf-l0-file-count-limit-delays-with-ongoing-compaction: 0, cf-l0-file-count-limit-stops-with-ongoing-compaction: 0, l0-file-count-limit-delays: 0, l0-file-count-limit-stops: 0, memtable-limit-delays: 0, memtable-limit-stops: 0, pending-compaction-bytes-delays: 0, pending-compaction-bytes-stops: 0, total-delays: 0, total-stops: 0
+Block cache LRUCache@0000020A178669C0#8476 capacity: 8.00 MB seed: 1371472462 usage: 0.08 KB table_size: 256 occupancy: 1 collections: 1 last_copies: 1 last_secs: 2.7e-05 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [__metadata__] **
+2024/06/29-22:57:57.402594 3d70 [db/db_impl/db_impl_compaction_flush.cc:1977] [__metadata__] Manual flush start.
+2024/06/29-22:57:57.404079 3d70 [db/db_impl/db_impl_write.cc:2214] [__metadata__] New memtable created with log file: #82. Immutable memtables: 0.
+2024/06/29-22:57:57.405470 2ec8 [db/db_impl/db_impl_compaction_flush.cc:147] [JOB 3] Syncing log #78
+2024/06/29-22:57:57.408791 2ec8 (Original Log Time 2024/06/29-22:57:57.405432) [db/db_impl/db_impl_compaction_flush.cc:3250] Calling FlushMemTableToOutputFile with column family [__metadata__], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2024/06/29-22:57:57.409398 2ec8 [db/flush_job.cc:894] [__metadata__] [JOB 3] Flushing memtable with next log file: 82
+2024/06/29-22:57:57.409460 2ec8 EVENT_LOG_v1 {"time_micros": 1719691077409431, "job": 3, "event": "flush_started", "num_memtables": 1, "num_entries": 12, "num_deletes": 0, "total_data_size": 432, "memory_usage": 1376, "num_range_deletes": 0, "flush_reason": "Manual Flush"}
+2024/06/29-22:57:57.409470 2ec8 [db/flush_job.cc:928] [__metadata__] [JOB 3] Level-0 flush table #83: started
+2024/06/29-22:57:57.426938 2ec8 EVENT_LOG_v1 {"time_micros": 1719691077426810, "cf_name": "__metadata__", "job": 3, "event": "table_file_creation", "file_number": 83, "file_size": 1095, "file_checksum": "", "file_checksum_func_name": "Unknown", "smallest_seqno": 96, "largest_seqno": 97, "table_properties": {"data_size": 63, "index_size": 33, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 52, "raw_average_key_size": 26, "raw_value_size": 16, "raw_average_value_size": 8, "num_data_blocks": 1, "num_entries": 2, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "__metadata__", "column_family_id": 1, "comparator": "leveldb.BytewiseComparator", "user_defined_timestamps_persisted": 1, "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "LZ4", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; use_zstd_dict_trainer=1; ", "creation_time": 1719690960, "oldest_key_time": 1719690960, "file_creation_time": 1719691077, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "212522b8-3641-11ef-a800-0c5415cb51f5", "db_session_id": "D852MDGQIDVQSLJKOZKS", "orig_file_number": 83, "seqno_to_time_mapping": "N/A"}}
+2024/06/29-22:57:57.427094 2ec8 [db/flush_job.cc:1067] [__metadata__] [JOB 3] Flush lasted 18329 microseconds, and 0 cpu microseconds.
+2024/06/29-22:57:57.431057 2ec8 (Original Log Time 2024/06/29-22:57:57.427041) [db/flush_job.cc:1019] [__metadata__] [JOB 3] Level-0 flush table #83: 1095 bytes OK
+2024/06/29-22:57:57.431074 2ec8 (Original Log Time 2024/06/29-22:57:57.427127) [db/memtable_list.cc:558] [__metadata__] Level-0 commit table #83 started
+2024/06/29-22:57:57.431079 2ec8 (Original Log Time 2024/06/29-22:57:57.430853) [db/memtable_list.cc:758] [__metadata__] Level-0 commit table #83: memtable #1 done
+2024/06/29-22:57:57.431083 2ec8 (Original Log Time 2024/06/29-22:57:57.430902) EVENT_LOG_v1 {"time_micros": 1719691077430887, "job": 3, "event": "flush_finished", "output_compression": "LZ4", "lsm_state": [3, 0, 0, 0, 0, 0, 1], "immutable_memtables": 0}
+2024/06/29-22:57:57.431088 2ec8 (Original Log Time 2024/06/29-22:57:57.430919) [db/db_impl/db_impl_compaction_flush.cc:373] [__metadata__] Level summary: base level 6 level multiplier 10.00 max bytes base 268435456 files[3 0 0 0 0 0 1] max score 0.75, estimated pending compaction bytes 0
+2024/06/29-22:57:57.431279 3d70 [db/db_impl/db_impl_compaction_flush.cc:1988] [__metadata__] Manual flush finished, status: OK
+2024/06/29-22:57:57.431304 3d70 [db/db_impl/db_impl_compaction_flush.cc:1977] [default] Manual flush start.
+2024/06/29-22:57:57.431331 3d70 [db/db_impl/db_impl_write.cc:2214] [default] New memtable created with log file: #82. Immutable memtables: 0.
+2024/06/29-22:57:57.431397 2ec8 (Original Log Time 2024/06/29-22:57:57.431384) [db/db_impl/db_impl_compaction_flush.cc:3250] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2024/06/29-22:57:57.431410 2ec8 [db/flush_job.cc:894] [default] [JOB 4] Flushing memtable with next log file: 82
+2024/06/29-22:57:57.431437 2ec8 EVENT_LOG_v1 {"time_micros": 1719691077431422, "job": 4, "event": "flush_started", "num_memtables": 1, "num_entries": 6, "num_deletes": 0, "total_data_size": 291, "memory_usage": 1152, "num_range_deletes": 0, "flush_reason": "Manual Flush"}
+2024/06/29-22:57:57.431451 2ec8 [db/flush_job.cc:928] [default] [JOB 4] Level-0 flush table #84: started
+2024/06/29-22:57:57.445366 2ec8 EVENT_LOG_v1 {"time_micros": 1719691077445319, "cf_name": "default", "job": 4, "event": "table_file_creation", "file_number": 84, "file_size": 1148, "file_checksum": "", "file_checksum_func_name": "Unknown", "smallest_seqno": 80, "largest_seqno": 95, "table_properties": {"data_size": 101, "index_size": 52, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 123, "raw_average_key_size": 41, "raw_value_size": 16, "raw_average_value_size": 5, "num_data_blocks": 1, "num_entries": 3, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "user_defined_timestamps_persisted": 1, "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "LZ4", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; use_zstd_dict_trainer=1; ", "creation_time": 1719690960, "oldest_key_time": 1719690960, "file_creation_time": 1719691077, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "212522b8-3641-11ef-a800-0c5415cb51f5", "db_session_id": "D852MDGQIDVQSLJKOZKS", "orig_file_number": 84, "seqno_to_time_mapping": "N/A"}}
+2024/06/29-22:57:57.445394 2ec8 [db/flush_job.cc:1067] [default] [JOB 4] Flush lasted 13997 microseconds, and 0 cpu microseconds.
+2024/06/29-22:57:57.448344 2ec8 (Original Log Time 2024/06/29-22:57:57.445385) [db/flush_job.cc:1019] [default] [JOB 4] Level-0 flush table #84: 1148 bytes OK
+2024/06/29-22:57:57.448364 2ec8 (Original Log Time 2024/06/29-22:57:57.445401) [db/memtable_list.cc:558] [default] Level-0 commit table #84 started
+2024/06/29-22:57:57.448370 2ec8 (Original Log Time 2024/06/29-22:57:57.448118) [db/memtable_list.cc:758] [default] Level-0 commit table #84: memtable #1 done
+2024/06/29-22:57:57.448375 2ec8 (Original Log Time 2024/06/29-22:57:57.448182) EVENT_LOG_v1 {"time_micros": 1719691077448144, "job": 4, "event": "flush_finished", "output_compression": "LZ4", "lsm_state": [3, 0, 0, 0, 0, 0, 3], "immutable_memtables": 0}
+2024/06/29-22:57:57.448380 2ec8 (Original Log Time 2024/06/29-22:57:57.448203) [db/db_impl/db_impl_compaction_flush.cc:373] [default] Level summary: base level 6 level multiplier 10.00 max bytes base 268435456 files[3 0 0 0 0 0 3] max score 0.75, estimated pending compaction bytes 0
+2024/06/29-22:57:57.448388 2ec8 [db/db_impl/db_impl_files.cc:479] [JOB 4] Try to delete WAL files size 681, prev total WAL file size 681, number of live WAL files 2.
+2024/06/29-22:57:57.448737 2ec8 [file/delete_scheduler.cc:77] Deleted file D:\Projects\streamlit_data_entry\state\streamlit-reader\default\repartition__streamlit-reader--streamlit-sales-tracker--pharmacy_item\0/000078.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2024/06/29-22:57:57.449831 3d70 [db/db_impl/db_impl_compaction_flush.cc:1988] [default] Manual flush finished, status: OK
+2024/06/29-22:57:57.452980 3d70 [db/db_impl/db_impl_compaction_flush.cc:1977] [default] Manual flush start.
+2024/06/29-22:57:57.453026 3d70 [db/db_impl/db_impl_compaction_flush.cc:1988] [default] Manual flush finished, status: OK
+2024/06/29-22:57:57.453045 3d70 [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/06/29-22:57:57.453329 3d70 [db/db_impl/db_impl.cc:488] Shutdown: canceling all background work
+2024/06/29-22:57:57.456166 3d70 [db/db_impl/db_impl.cc:681] Shutdown complete

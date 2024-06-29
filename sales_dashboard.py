@@ -113,7 +113,7 @@ def main():
         data_json = json.dumps(data_dict)
         
         # Define a topic with JSON serialization
-        topic = app.topic(name='for json data serialization"', value_serializer='json')
+        topic = app.topic(name='streamlit-sales-tracker', value_serializer='json')
         
         with app.get_producer() as producer:
             producer.produce(
